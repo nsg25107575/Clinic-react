@@ -60,7 +60,7 @@ export default function DoctorsList() {
                 <ul>
                   {e.appointments.map((appointment, appIndex) => (
                     <li key={appIndex} className="patient">
-                      {appointment.patientName} {appointment.patientName} - {appointment.date} {appointment.time}
+                      {appointment.patientSurname} {appointment.patientName} - {appointment.date} {appointment.time}
                       <div className="patient-btn">
                         <DeleteAppointmentButton doctorIndex={ind} appointmentIndex={appIndex} posts={posts} setPosts={setPosts}/>
                         <HandleRescheduleButton doctorIndex={ind} appointmentIndex={appIndex} posts={posts} setPosts={setPosts} />

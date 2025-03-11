@@ -20,7 +20,7 @@ export default function DoctorForm({ persons, setPersons, error, setPosts, posts
       return;
     }
 
-    const nameRegex = /^[A-Za-zА-Яа-я]+$/;
+    const nameRegex = /^[A-Za-zА-Яа-яіІ]+$/;
     if (!nameRegex.test(persons.name) || !nameRegex.test(persons.surname) || !nameRegex.test(persons.patronymic) || !nameRegex.test(persons.specialization)) {
       setErrorDoctorForm('У всіх полях повинні бути лише букви.');
       return;
